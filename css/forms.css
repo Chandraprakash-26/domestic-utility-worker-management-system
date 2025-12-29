@@ -1,0 +1,100 @@
+/* General Form Styles */
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ecf0f1;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #43cea2;
+    box-shadow: 0 0 0 3px rgba(67, 206, 162, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #43cea2;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: #185a9d;
+    transform: translateX(-5px);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Star Rating Styles from give_feedback.php */
+.rating-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.star-rating {
+    display: flex;
+    gap: 5px;
+    font-size: 2rem;
+}
+.star {
+    cursor: pointer;
+    color: #ddd;
+    transition: color 0.2s;
+}
+.star.active,
+.star:hover {
+    color: #ffc107;
+}
