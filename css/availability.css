@@ -1,0 +1,51 @@
+/* Availability Grid */
+.availability-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.availability-card {
+    background: #f8f9fa;
+    border: 2px solid #ecf0f1;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.availability-card h4 {
+    margin: 0 0 8px 0;
+    color: #34495e;
+}
+
+.availability-card p {
+    margin: 0 0 12px 0;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* Specific to setup_availability.php and manage_availability.php */
+.availability-setup {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.day-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+.time-inputs {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.time-inputs label {
+    font-weight: 500;
+    color: #666;
+    min-width: 50px;
+}
+.time-inputs input[type="time"] {
+    flex: 1;
+}
